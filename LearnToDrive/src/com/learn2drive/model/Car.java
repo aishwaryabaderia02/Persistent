@@ -1,21 +1,27 @@
 package com.learn2drive.model;
+
+import java.io.Serializable;
+
 /*
  * entity
  * model
  * java bean/bean
  */
-public class Car {
+public class Car implements Serializable{  
+	
+	private static final long serialVersionUID = 7460029753160967869L;
+	//interfaces in we needn't override any method are called marker interfaces
 	/*data members
 	 * attribute
 	 * properties
 	 * instance variables*/
 	private String make, model, colour;
 	private Engine engine;         //car "has a" engine
-									/*containership
+									/* containership
 									 * composition
-									 * 		Car has a engine
-									 *  agrregation
-									 *  	Driver has car(s)     
+									 * Car has a engine
+									 * agrregation
+									 * Driver has car(s)     
 									 */
 	
 	//no arg constructor //no parameter constructor
@@ -68,6 +74,18 @@ public class Car {
 	//change return types to that of it's subclasses
 	public String toString() {
 		return getMake() + "---" + getModel() + "---" +getColour() ;
+	}
+
+	public void setEngine(Engine engine) {
+		// TODO Auto-generated method stub
+		this.engine = engine;
+		
+	}
+
+	public Engine getEngine() {
+		// TODO Auto-generated method stub
+		
+		return engine;
 	}
 	
 	

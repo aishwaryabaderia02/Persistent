@@ -3,8 +3,25 @@ import java.util.Scanner;
 
 public class MyFirstJavaClass {
 
+	private int i = 76;
+
+	public int getI() {
+		return i;
+	}
+
+	public void setI(int i) {
+		this.i = i;
+	}
+
 	public static void main(String[] args) {
-	byte bytval;
+	
+		MyFirstJavaClass m = new MyFirstJavaClass();
+		
+		System.out.println(m.getI());
+		m.setI(4);
+		System.out.println(m.getI());
+		
+		/*byte bytval;
 	bytval = 0b1010;
 	bytval = (byte)(bytval * 10);
 	float p = 111.3f;
@@ -55,7 +72,7 @@ public class MyFirstJavaClass {
 	for(int index = 0;index < matrix.length ; index++)
 	{
 		matrix[index] = new char[(index+1)*5];
-	}
 	}*/
+	}
 }
 

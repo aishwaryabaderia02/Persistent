@@ -17,7 +17,7 @@ public class Product {
 	public String pName;
 	public String keyword;
 	
-	public boolean isPresent(String[] PName, String keyword)
+	public static boolean isPresent(String[] PName, String keyword)
 	{
 		Product p = new Product();
 		p.setKeyword(keyword);

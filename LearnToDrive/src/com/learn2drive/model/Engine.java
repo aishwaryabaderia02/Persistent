@@ -1,8 +1,14 @@
 package com.learn2drive.model;
 
+import java.io.Serializable;
+
 import com.learn2drive.util.FuelType;
 
-public class Engine {
+public class Engine implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4985737911262347214L;
 	private double horsePower;
 	private int cubicCapacity;
 	private FuelType fuelType;
