@@ -1,15 +1,28 @@
 package com.psl.util;
 
-public class BankAccount {
+public class BankAccount implements Comparable<BankAccount>{
 	private String numbers;
 	private double balance;
+	private String fullName;
 	
+	
+	public BankAccount( String fullName,String numbers, double balance) {
+		super();
+		this.numbers = numbers;
+		this.balance = balance;
+		this.fullName = fullName;
+	}
+
 	public BankAccount(String numbers, double balance) {
 		super();
 		this.numbers = numbers;
 		this.balance = balance;
 	}
 	
+	public BankAccount() {
+		super();
+	}
+
 	public String getNumbers() {
 		return numbers;
 	}
@@ -51,6 +64,28 @@ public class BankAccount {
 		} else if (!numbers.equals(other.numbers))
 			return false;
 		return true;
+	}
+
+	@Override
+	public int compareTo(BankAccount anotherAccount) {
+		if (getBalance() > anotherAccount.getBalance())
+		{
+			return 1;
+		}
+		else if (getBalance() < anotherAccount.getBalance())
+		{
+			return -1;
+		}
+		else
+			return 0;
+	}
+
+	public String getFullName() {
+		return fullName;
+	}
+
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
 	}
 	
 }
