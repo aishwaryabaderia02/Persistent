@@ -12,7 +12,7 @@ public class BankAccount implements Comparable<BankAccount>{
 		super();
 	}
 	
-	public BankAccount(String numbers, double balance, String fullName,
+	public BankAccount(String fullName,String numbers,double balance,
 			Date openedOn) {
 		super();
 		this.numbers = numbers;

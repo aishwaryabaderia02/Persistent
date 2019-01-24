@@ -14,7 +14,7 @@ public class Client {
 			int bytesRead;
 			
 			byte data[] = new byte[1024];
-			while((bytesRead = fi.read(data)) != -1){  //return number of bytes read or -1
+			while((bytesRead = fi.read(data)) != -1){  //return number of bytes read or -1 
 				fo.write(data, 0, bytesRead);
 			}
 		}
