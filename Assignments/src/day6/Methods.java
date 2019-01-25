@@ -1,23 +1,13 @@
 package day6;
 
-public interface Methods {
-	public static void add()
-	{
-		
-	}
+public interface Methods<T> {
+	public LinkedListNode<T> add(LinkedListNode<T> node,LinkedListNode<T> root );
 	
-	public static void remove()
-	{
-		
-	}
+	public <T> void remove(LinkedListNode<T> root);
 	
-	public static void change()
-	{
-		
-	}
+	public <T> void change(LinkedListNode<T> root, LinkedListNode<T> n, int index);
 	
-	public static void size()
-	{
-		
-	}
+	public <T> void size(LinkedListNode<T> root);
+	
+	public <T> void display(LinkedListNode<T> root);
 }
