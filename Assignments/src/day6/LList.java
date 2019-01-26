@@ -10,7 +10,6 @@ public class LList<T> implements Methods<T>{
 		
 		LList<String> l = new LList<String>();
 		LinkedListNode<String> root = null;
-		LinkedListNode<String> temp = null;
 		LinkedListNode<String> n = new LinkedListNode<String>();
 		n.setInfo("yo");
 		root = l.add(n,root);	
