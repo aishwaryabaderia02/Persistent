@@ -9,7 +9,7 @@ public class Main {
 	public static void main(String[] args) {
 		Properties p = new Properties();
 		try{
-			p.load(new FileReader(new File("configuration.properties")));
+		/*	p.load(new FileReader(new File("configuration.properties")));
 			System.out.println(p.getProperty("OS"));
 			System.out.println(p.getProperty("RAM"));
 			System.out.println(p.getProperty("Storage"));
@@ -18,17 +18,20 @@ public class Main {
 			BufferedReader br = new BufferedReader(fr);
 			
 			br.readLine();
-			
-			/*Scanner scanFile = new Scanner(new File("file"));
-			
+		*/	
+			File file = new File("H:\\Users\\aishwarya_baderia\\Persistent\\IO\\Movies.txt");
+
+			Scanner scanFile = new Scanner(file);
+			System.out.println(file.exists());
 			while(scanFile.hasNext()){
 				String line = scanFile.next();
 				Scanner token = new Scanner(line);
 				token.useDelimiter(",");
 				while(token.hasNext()){
 					String value = token.next();
+					System.out.println(value);
 				}
-			}*/
+			}
 		}
 		catch(IOException e){
 			e.printStackTrace();
