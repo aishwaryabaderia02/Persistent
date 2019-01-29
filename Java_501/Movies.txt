@@ -1,0 +1,6 @@
+Barfi,Hindi,Anurag Basu,Sid Roy Kapoor,2012-04-23,2	
+Avengers,English,Joss Whedon,Kevin Feige,2012-04-25,1.5	
+Three Idiots,Hindi,Rajkumar Hirani,Vindu Vinod Chopra,2012-04-06,3
+Student of the Year,Hindi,Karan Johar,Shahrukh Khan,2012-10-3,2.5
+Madasgascar,English,Tom McGrath,Mireille Soria,2012-05-04,1.40
+
